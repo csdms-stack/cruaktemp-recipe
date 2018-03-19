@@ -1,5 +1,5 @@
 {% set name = "cruaktemp" %}
-{% set version = "0.1" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name }}
@@ -10,7 +10,7 @@ source:
   git_rev: v{{ version }}
 
 build:
-  number: 0
+  # number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -35,6 +35,6 @@ about:
   home: https://csdms.colorado.edu/wiki/Model:CruAKTemp
   license: MIT
   summary: 
-    The CRUAKTemp package provides access to a subsample of CRU NCEP
-    data temperature for Alaska.
+    CRUAKTemp provides access to a subsample of CRU NCEP temperature
+    data for Alaska.
   dev_url: https://github.com/permamodel/cruAKtemp
